@@ -1,0 +1,12 @@
+nms.txt
+(d.1) How does NMS work?
+NMS stands for Non Max Supression. It is used to reject multiple detection (bounding boxes) around the same object by finding their overlap. NMS takes values between 1 and 0. 0 NMS corresponds to no rejection. Increasing NMS, leads to higher supression. 
+
+(d.2) How does NMS affect detections?
+It Helps in supression of multiple detection of the same object. Thus different object can be delineated easilay.
+
+(d.3) What is one way that NMS can help detection performance?
+When multiple objects are in close proximity in an image, a higher NMS will ease the classification of each of the detected objects.
+
+(d.4) What is one way that NMS can harm detection performance?
+A higher NMS may supress detections of actual objects in an image. It may also reject detections of multiple objects when they are in close proximity.
